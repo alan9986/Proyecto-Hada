@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagenes/Logo.png" type="image/x-icon">
+    <!--Logo etiqueta de pestaña .ico o .png 16x16 pixeles recomendado puede ser igualmente .jpeg-->
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap" rel="stylesheet">
+    <title>Hada</title>
+</head>
+
+<body class="padre_contacto">
+    <!---------Logo y menu nav-------->
+    <header class="header">
+        <h2>HADA</h2>
+        <h3>Moda y Accesorios</h3>
+        <nav class="menu__navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historía</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="compras.html">Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--------------Contactos----------->
+    <h2 class="titulo__contacto">En Que Podemos <span>Ayudarte</span></h2>
+
+    <div class="formulario__contacto__conjunto">
+        <div class="formulario__contacto">
+            <legend>Datos personales</legend>
+            <form action="" >
+                <p>
+                    <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre"
+                placeholder="Igresa tu Nombre" required>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido"
+                placeholder="Igresa tu Apellido" required>
+                </p>
+                <p>
+                    <label for="correo">E-Mail:</label><input type="email" name="correo" id="corre"
+                placeholder="Ingresa tu Correo" required>
+                </p>
+                <p>
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo">
+                    <option value="">Seleccionar</option>
+                    <option value="h">Hombre</option>
+                    <option value="m">Mujer</option>
+                    <option value="nb">No Binario</option>
+                    </select>
+                </p>
+                <p class="bloque_check">Deseas recibir el Newsletter<input type="checkbox" name="acepta" value="1">
+                </p>
+                <p class="bloque_texto">
+                <textarea name="comentarios" id="comentarios" cols="35" rows="10" placeholder="Comentario"></textarea>
+                </p>
+                <input class="enviar" type="submit" value="Enviar formulario">
+                <input class="limpiar" type="reset" value="Limpiar formulario">
+            </form>
+        </div>    
+    </div>
+    <!--logo y footer-->
+    <footer class="footer">
+        <p><a href="index.html"><img src="./imagenes/logo_foot.jpg" class="footer__logo"></a>
+        </p>
+        <div class="footer__navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </div>
+
+</body>
+
+</html>
