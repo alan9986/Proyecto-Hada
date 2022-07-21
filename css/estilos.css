@@ -15,11 +15,8 @@ a {
   background: url(../imagenes/logo.jpg);
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 15%; }
-
-.header img {
-  display: flex;
-  align-items: center; }
+  background-size: 15%;
+  margin: auto; }
 
 .header h2 {
   font-size: 8rem;
@@ -32,23 +29,19 @@ a {
   font-weight: bold;
   text-align: center; }
 
-.menu__navbar li {
-  display: inline-block;
-  color: #890c89;
-  font-size: 2rem; }
-
-.menu__navbar ul {
+.menu__navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; }
+
+.navbar-nav a {
+  color: #740574;
+  font-size: 3rem;
   padding: 1rem; }
 
-.menu__navbar a:hover {
-  color: white; }
+.navbar-nav a:hover {
+  color: #68073b; }
 
 /* ------body index-------- */
-.contenedor__flex {
-  display: flex; }
-
 .contenido p {
   align-items: flex-start;
   text-align: center;
@@ -58,13 +51,9 @@ a {
   padding: 5rem;
   line-height: 150%; }
 
-.productos__home {
-  display: flex;
-  justify-content: space-between; }
-
-.productos__home img {
-  width: 30%;
-  padding: 2rem; }
+.carousel-inner p {
+  color: #06261d;
+  font-style: unset; }
 
 .contenido h2 {
   padding: 2rem;
