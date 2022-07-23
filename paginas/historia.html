@@ -2,80 +2,87 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagenes/logo_pestaña.jpg" type="image/x-icon">
-    <!--Logo etiqueta de pestaña .ico o .png 16x16 pixeles recomendado puede ser igualmente .jpeg-->
-    <!--------- CSS Boostrap ONLY------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!------------CSS propio----------->
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Hada</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../imagenes/logo_pestaña.jpg" type="image/x-icon">
+  <!--Logo etiqueta de pestaña .ico o .png 16x16 pixeles recomendado puede ser igualmente .jpeg-->
+  <!--------- CSS Boostrap ONLY------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!------------CSS propio----------->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Hada</title>
 </head>
 
 <body class="padre">
-    <!---------Logo y menu nav-------->
-    <header class="header">
-        <h2>HADA</h2>
-        <h3>Moda y Accesorios</h3>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid ">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse menu__navbar" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="historia.html">Historia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="compras.html">Compras</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <!----------- contenido---------->
-    <div class="cuerpo__historia">
-        <section class="contenido__historia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quas iusto cumque sequi recusandae ducimus, ipsum ipsam! Sed quidem suscipit placeat deleniti rerum veniam porro sequi. Maxime sunt quaerat modi.
-            </p>
-        </section>
-    </div>
-    <section class="contenido__bocetos">
-        <img src="../imagenes/blanco_negro.jpg" alt="">
-        <img src="../imagenes/lenceria.jpg" alt="">
-        <img src="../imagenes/pintitas.jpg" alt="">
-        <img src="../imagenes/minifalda.jpg" alt="">
-        <img src="../imagenes/verde.jpg" alt="">
-        <img src="../imagenes/azul_rojo.jpg" alt="">
-        <img src="../imagenes/casual.jpg" alt="">
-        <img src="../imagenes/gala.jpg" alt="">
-    </section>
-    <!-----------logo y footer-------->
-    <footer class="footer">
-        <p><a href="../index.html"><img src="../imagenes/logo_foot.jpg" class="footer__logo"></a>
-        </p>
-        <div class="footer__navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+  <!---------Logo y menu nav-------->
+  <header class="header">
+    <h2>HADA</h2>
+    <h3>Moda y Accesorios</h3>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu__navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compras.html">Compras</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
+  <!----------- contenido---------->
+  <div class="cuerpo__historia">
+    <section class="contenido__historia animate__animated animate__bounce">
+      <p>Hola! Soy Carito! Estudie diseño de indumentaria en la UBA y luego en la Escuela Argentina de Modas.
+        Siempre
+        me gusto emprender y por eso decidi crear HADA, una marca que trasmite magia y fantasia. Junto a un
+        amigo
+        empezamos este proyecto de pagina web donde en esta seccion se pueden ver algunos de mis bocetos.
+      </p>
+    </section>
+  </div>
+  <section class="contenido__bocetos">
+    <img src="../imagenes/blanco_negro.jpg" alt="">
+    <img src="../imagenes/lenceria.jpg" alt="">
+    <img src="../imagenes/pintitas.jpg" alt="">
+    <img src="../imagenes/minifalda.jpg" alt="">
+    <img src="../imagenes/verde.jpg" alt="">
+    <img src="../imagenes/azul_rojo.jpg" alt="">
+    <img src="../imagenes/casual.jpg" alt="">
+    <img src="../imagenes/gala.jpg" alt="">
+  </section>
+  <!-----------logo y footer-------->
+  <footer class="footer">
+    <p><a href="../index.html"><img src="../imagenes/logo_foot.jpg" class="footer__logo"></a>
+    </p>
+    <div class="footer__navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

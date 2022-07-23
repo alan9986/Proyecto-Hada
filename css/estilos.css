@@ -61,6 +61,20 @@ a {
   font-family: cursive;
   font-weight: 100; }
 
+.col-lg-6 {
+  padding: 25px; }
+
+.imagen_proyecto img {
+  width: 100%;
+  height: 100%; }
+
+.imagen_proyecto img:hover {
+  border: solid 5px bisque; }
+
+.col-lg-2 {
+  margin: 0;
+  padding: 25px; }
+
 /* --------footer-------- */
 .footer {
   display: flex;
@@ -87,14 +101,13 @@ a {
 .footer p {
   flex: 1 1; }
 
-/* -----body historia----- */
+/* ----------------body historia---------------- */
 .contenido__historia p {
   align-items: flex-start;
   text-align: center;
   font-size: 3rem;
   font-style: italic;
   color: brown;
-  padding: 5rem;
   line-height: 150%; }
 
 .contenido__bocetos {
@@ -103,30 +116,21 @@ a {
 
 .contenido__bocetos img {
   width: 25%;
-  border: 0.1rem solid black;
-  padding: 0.1rem; }
+  padding: 50px; }
 
-/* ---------Tabla Productos-------- */
-.table {
-  align-items: center; }
-
-.table th, td {
-  width: 5%;
-  text-align: center;
-  vertical-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1.5rem; }
+.contenido__bocetos img:hover {
+  transform: scale(1.2, 1.2); }
 
 /* ------Imagenes Productos-------- */
-.imagenes__productos {
-  display: flex;
-  flex-wrap: wrap; }
+.tarjeta_productos {
+  border: solid black; }
 
-.imagenes__productos img {
-  width: 25%;
-  padding: 1rem; }
+.tarjeta_productos {
+  height: cover;
+  background-color: #aca175;
+  text-align: center; }
 
-/*----------Contacto----------*/
+/*-----------------Contacto-----------------*/
 .padre_contacto {
   background-color: bisque; }
 
@@ -197,11 +201,6 @@ ul {
   .formulario__contacto__conjunto > * {
     padding: 2em; }
   /* --------responsive header---------- */
-  .header {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 33.3% 33.3% 33.3%;
-    grid-template-areas: "h2 h2 h2 h2 h2" "h3 h3 h3 h3 h3" "nav nav nav nav nav"; }
   .header h2 {
     grid-area: h2;
     grid-column: 1 / 6;
@@ -210,30 +209,13 @@ ul {
     grid-area: h3;
     grid-column: 1 / 6;
     font-size: 3.8rem; }
-  .menu__navbar ul {
-    grid-area: nav;
-    display: inline-flex;
-    padding: 1.5rem; }
-  .menu__navbar li {
-    font-size: 1.3em; }
-  /* -----------responsive body index--------- */
-  /* .productos__home{
-        min-width: 500px;
-        display: grid;
-        grid-template-columns: repeat(1, minmax(200px, 1 fr));
-        grid-template-rows: repeat(6, minmax(200px, 1fr));
-        align-items: center;
-        justify-items: center;
-        display: none;
-    } */
   .contenido p {
-    opacity: -1;
-    padding: 0%;
-    font-size: xx-small; }
+    font-size: 0%; }
   .contenido h2 {
     font-size: 2em;
     padding-left: .5em; }
-  .productos__home {
-    display: grid; }
-  .productos__home img {
-    width: 100%; } }
+  /*------------- responsive historia-------- */
+  .contenido__bocetos img {
+    padding: 0%; }
+  .contenido__historia p {
+    font-size: small; } }
