@@ -24,25 +24,30 @@ ul {
         font-family: 'Montagu Slab', serif;
         line-height: 1.6;
     }
+
     .formulario__contacto form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    
+
         p {
             margin: 1;
             padding: 1em;
-    
+
             label {
                 display: block;
             }
         }
-        .bloque_check, .bloque_texto{
-            grid-column:  1 / 3;
+
+        .bloque_check,
+        .bloque_texto {
+            grid-column: 1 / 3;
         }
-        .bloque_check{
+
+        .bloque_check {
             display: flex;
             align-items: center;
         }
+
         & select,
         input,
         textarea {
@@ -53,8 +58,12 @@ ul {
             outline: none;
             border: 1px solid coral;
         }
-        .enviar, .limpiar{
-            &:hover, :focus{
+
+        .enviar,
+        .limpiar {
+
+            &:hover,
+            :focus {
                 background-color: coral;
                 color: beige;
                 transition: background-color .5s ease-in;

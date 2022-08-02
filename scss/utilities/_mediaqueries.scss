@@ -1,0 +1,49 @@
+/* ------pantallas grandes-------- */
+
+@media (max-width: 768px) {
+
+    /*-------responsive formulario---------*/
+    .formulario__contacto__conjunto {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .formulario__contacto__conjunto>* {
+        padding: 2em;
+    }
+
+    /* --------responsive header---------- */
+
+    .header h1 {
+        grid-area: h2;
+        grid-column: 1 / 6;
+        font-size: 5.8em;
+    }
+
+    .header h2 {
+        grid-area: h3;
+        grid-column: 1 / 6;
+        font-size: 3.8rem;
+    }
+
+    .contenido p {
+        font-size: 0%;
+    }
+
+    .contenido h3 {
+        font-size: 2em;
+        padding-left: .5em;
+    }
+
+    /*------------- responsive historia-------- */
+
+    .contenido__bocetos img {
+        padding: 0%;
+    }
+
+    .contenido__historia p {
+        font-size: small;
+    }
+
+
+}

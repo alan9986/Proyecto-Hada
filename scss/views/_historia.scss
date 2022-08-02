@@ -1,0 +1,26 @@
+/* ----------------body historia---------------- */
+
+.contenido {
+    &__historia {
+        p {
+            align-items: flex-start;
+            text-align: center;
+            font-size: 3rem;
+            font-style: italic;
+            color: brown;
+            line-height: 150%;
+        }
+    }
+    &__bocetos{
+        display: flex;
+        flex-wrap: wrap;
+        & img{
+            width: 25%;
+            padding: 50px;
+            &:hover{
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+
+}

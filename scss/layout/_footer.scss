@@ -1,0 +1,29 @@
+/* --------footer-------- */
+
+.footer {
+    display: flex;
+    padding: 1.5rem;
+    background-color: black;
+    border-top: 0.5rem solid lavender;
+
+    p {
+        flex: 1 1;
+    }
+
+    &__navbar {
+        li {
+            font-size: 175%;
+            list-style: none;
+            padding-top: 0.5rem;
+
+            a {
+                color: white;
+
+
+                &:hover {
+                    color: pink;
+                }
+            }
+        }
+    }
+}

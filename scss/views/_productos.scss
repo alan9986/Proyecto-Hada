@@ -1,0 +1,16 @@
+/* ------Imagenes Productos-------- */
+.card {
+    border: solid 10px rgb(255, 228, 196);
+    height: 100%;
+    background-color: rgb(172, 161, 117);
+    text-align: center;
+    img{
+        height: 100%;
+    }
+    &-title{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    &-text{
+        font-style: oblique;
+    }
+}
