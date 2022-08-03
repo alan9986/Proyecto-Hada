@@ -1,5 +1,7 @@
 @import "utilities/variables";
 
+@import "base";
+
 @import "layout/header";
 @import "layout/footer";
 
@@ -8,6 +10,5 @@
 @import "views/productos";
 @import "views/contactos";
 
-@import "base";
-
+@import "utilities/operator";
 @import "utilities/mediaqueries";
