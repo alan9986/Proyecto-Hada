@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* AHHHHHHHHHH */
+/* Fuentes */
+/* Color fondo */
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +21,13 @@ a {
   background-size: 15%;
   margin: auto; }
   .header h1 {
-    font-size: 8rem;
+    font-family: "Prompt", sans-serif;
+    font-size: 9rem;
     text-transform: uppercase;
-    font-weight: bold;
     text-align: center; }
   .header h2 {
-    font-size: 5rem;
-    font-weight: bold;
+    font-family: "Prompt", sans-serif;
+    font-size: 4rem;
     text-align: center; }
   .header .menu__navbar {
     display: flex;
@@ -103,23 +105,44 @@ a {
     .contenido__bocetos img:hover {
       transform: scale(1.2, 1.2); }
 
-/* ------Imagenes Productos-------- */
-/* .card {
-    border: solid 10px rgb(255, 228, 196);
-    height: 100%;
-    background-color: rgb(172, 161, 117);
+.productos__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "aritos anillos_triangulo anillos_corazon aritos_teddy" "pulsera_dije anillos_monos pulsera_corazon cadenita_teddy";
+  gap: 10px;
+  margin: 10px; }
+  .productos__grid .card {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
     text-align: center;
-    img{
-        height: 100%;
-    }
-    &-title{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    &-text{
-        font-style: oblique;
-    }
-}
- */
+    border: 2px solid black;
+    background-color: bisque; }
+    .productos__grid .card .aritos {
+      grid-area: aritos_perla; }
+    .productos__grid .card .anillos_triangulo {
+      grid-area: anillos_triangulo; }
+    .productos__grid .card .anillos_corazon {
+      grid-area: anillos_corazon; }
+    .productos__grid .card .aritos_teddy {
+      grid-area: aritos_teddy; }
+    .productos__grid .card .pulsera_dije {
+      grid-area: pulsera_dije; }
+    .productos__grid .card .anillos_monos {
+      grid-area: anillos_monos; }
+    .productos__grid .card .pulsera_corazon {
+      grid-area: pulsera_corazon; }
+    .productos__grid .card .cadenita_teddy {
+      grid-area: cadenita_teddy; }
+    .productos__grid .card h3 {
+      font-family: 'Titillium Web', sans-serif; }
+    .productos__grid .card button {
+      width: 100%; }
+
 /*-----------------Contacto-----------------*/
 ul {
   list-style: none;
@@ -170,6 +193,15 @@ ul {
       color: beige;
       transition: background-color .5s ease-in; }
 
+.background-size, .img_aritos_perla, .img_anillos_triangulo, .img_anillos_corazon, .img_aritos_teddy, .img_pulsera_dije, .img_anillos_monos, .img_pulsera_corazon, .img_cadenita_teddy {
+  width: 190px;
+  height: 150px; }
+
+.background-centrado, .img_aritos_perla, .img_anillos_triangulo, .img_anillos_corazon, .img_aritos_teddy, .img_pulsera_dije, .img_anillos_monos, .img_pulsera_corazon, .img_cadenita_teddy {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .img_aritos_perla {
   background-image: url("../imagenes/aritos_bolitas.jpg"); }
 
@@ -186,7 +218,7 @@ ul {
   background-image: url("../imagenes/cadenita.jpg"); }
 
 .img_anillos_monos {
-  background-image: url("./imagenes/anillos_moños.jpg"); }
+  background-image: url("../imagenes/anillos_moños.jpg"); }
 
 .img_pulsera_corazon {
   background-image: url("../imagenes/cadenita_corazon.jpg"); }
@@ -194,27 +226,14 @@ ul {
 .img_cadenita_teddy {
   background-image: url("../imagenes/cadenita_oso.jpg"); }
 
-main {
-  display: flex;
-  justify-content: space-around; }
-
-.card {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 320px;
-  background-color: bisque;
-  border: 2px solid black;
-  text-align: center; }
-
-.background-size, .img_aritos_perla, .img_anillos_triangulo, .img_anillos_corazon, .img_aritos_teddy, .img_pulsera_dije, .img_anillos_monos, .img_pulsera_corazon, .img_cadenita_teddy {
-  width: 190px;
-  height: 150px; }
-
-.background-centrado, .img_aritos_perla, .img_anillos_triangulo, .img_anillos_corazon, .img_aritos_teddy, .img_pulsera_dije, .img_anillos_monos, .img_pulsera_corazon, .img_cadenita_teddy {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.botones, .productos__grid .card button {
+  background: #574a64; }
+  .botones:hover, .productos__grid .card button:hover,
+  .botones :focus,
+  .productos__grid .card button :focus {
+    background-color: coral;
+    color: beige;
+    transition: background-color .5s ease-in; }
 
 /* ------pantallas grandes-------- */
 @media (max-width: 768px) {

@@ -4,33 +4,12 @@ $img-productos:(
     anillos_corazon: url('../imagenes/anillo_corazon.jpg'),
     aritos_teddy: url('../imagenes/aritos_oso.jpg'),
     pulsera_dije: url('../imagenes/cadenita.jpg'),
-    anillos_monos: url('./imagenes/anillos_moños.jpg'),
+    anillos_monos: url('../imagenes/anillos_moños.jpg'),
     pulsera_corazon: url('../imagenes/cadenita_corazon.jpg'),
     cadenita_teddy: url('../imagenes/cadenita_oso.jpg')
 
 );
 
-@each $name, $url in $img-productos {
-    .img_#{$name} {
-        @extend .background-centrado;
-        @extend .background-size;
-        background-image: #{$url};
-    }
-}
-main{
-    display: flex;
-    justify-content: space-around;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 320px;
-    background-color: rgb(255, 228, 196);
-    border: 2px solid black;
-    text-align: center;
-}
 .background-size{
     width: 190px;
     height: 150px;
@@ -39,4 +18,22 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@each $name, $url in $img-productos {
+    .img_#{$name} {
+        @extend .background-centrado;
+        @extend .background-size;
+        background-image: #{$url};
+    }
+}
+
+.botones{
+    background: #574a64;
+    &:hover,
+            :focus {
+                background-color: coral;
+                color: beige;
+                transition: background-color .5s ease-in;
+            }
 }

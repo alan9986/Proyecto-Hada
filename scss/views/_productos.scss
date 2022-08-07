@@ -1,17 +1,55 @@
-/* ------Imagenes Productos-------- */
-/* .card {
-    border: solid 10px rgb(255, 228, 196);
-    height: 100%;
-    background-color: rgb(172, 161, 117);
-    text-align: center;
-    img{
-        height: 100%;
-    }
-    &-title{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    &-text{
-        font-style: oblique;
+.productos__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "aritos anillos_triangulo anillos_corazon aritos_teddy"
+                        "pulsera_dije anillos_monos pulsera_corazon cadenita_teddy";
+    gap: 10px;
+    margin: 10px;
+
+    .card {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 300px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: $color-principal;
+        
+
+            .aritos{
+                grid-area: aritos_perla;
+            }
+            .anillos_triangulo {
+                grid-area: anillos_triangulo;
+            }
+            .anillos_corazon{
+                grid-area: anillos_corazon;
+            }
+            .aritos_teddy{
+                grid-area: aritos_teddy;
+            }
+            .pulsera_dije{
+                grid-area: pulsera_dije;
+            }
+            .anillos_monos{
+                grid-area: anillos_monos;
+            }
+            .pulsera_corazon{
+                grid-area: pulsera_corazon;
+            }
+            .cadenita_teddy{
+                grid-area: cadenita_teddy;
+            }
+        h3 {
+            font-family: 'Titillium Web', sans-serif;
+        }
+        button{
+            width: 100%;
+            @extend .botones
+            
+        }
     }
 }
- */

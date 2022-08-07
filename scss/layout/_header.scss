@@ -6,14 +6,14 @@
     background-size: 15%;
     margin: auto;
     h1{
-        font-size: 8rem;
+        font-family: $font-principal;
+        font-size: 9rem;
         text-transform: uppercase;
-        font-weight: bold;
         text-align: center;
     }
     h2{
-        font-size: 5rem;
-        font-weight: bold;
+        font-family: $font-principal;
+        font-size: 4rem;
         text-align: center;
     }
     & .menu__navbar{
