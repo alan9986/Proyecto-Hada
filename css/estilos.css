@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Fuentes */
 /* Color fondo */
 * {
@@ -242,7 +241,7 @@ ul {
   background-image: url("../imagenes/cadenita.jpg"); }
 
 .img_anillos_monos {
-  background-image: url("../imagenes/anillos_moños.jpg"); }
+  background-image: url("../imagenes/anillos_monos.jpg"); }
 
 .img_pulsera_corazon {
   background-image: url("../imagenes/cadenita_corazon.jpg"); }
