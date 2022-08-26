@@ -29,8 +29,6 @@ a {
     font-size: 4rem;
     text-align: center; }
   .header .navbar-nav a {
-    display: flex;
-    justify-content: space-around;
     color: #740574;
     font-size: 3rem;
     padding: 1rem; }
@@ -274,10 +272,10 @@ ul {
     grid-area: h2;
     grid-column: 1 / 6;
     font-size: 5.8em; }
-  .header h2 {
-    grid-area: h3;
-    grid-column: 1 / 6;
-    font-size: 3.8rem; }
+    .header h1 h2 {
+      grid-area: h3;
+      grid-column: 1 / 6;
+      font-size: 3.8rem; }
   .contenido p {
     font-size: 0%; }
   .contenido h3 {

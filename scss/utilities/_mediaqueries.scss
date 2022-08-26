@@ -18,22 +18,25 @@
         grid-area: h2;
         grid-column: 1 / 6;
         font-size: 5.8em;
+
+        h2 {
+            grid-area: h3;
+            grid-column: 1 / 6;
+            font-size: 3.8rem;
+        }
     }
 
-    .header h2 {
-        grid-area: h3;
-        grid-column: 1 / 6;
-        font-size: 3.8rem;
+    .contenido {
+        p {
+            font-size: 0%;
+        }
+
+        h3 {
+            font-size: 2em;
+            padding-left: .5em;
+        }
     }
 
-    .contenido p {
-        font-size: 0%;
-    }
-
-    .contenido h3 {
-        font-size: 2em;
-        padding-left: .5em;
-    }
 
     /*------------- responsive historia-------- */
 
