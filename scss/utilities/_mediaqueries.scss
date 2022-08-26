@@ -6,23 +6,28 @@
     .formulario__contacto__conjunto {
         display: grid;
         grid-template-columns: 2fr;
+        justify-content: center;
     }
 
     .formulario__contacto__conjunto>* {
-        padding: 2em;
+        padding: 0.5em;
     }
 
     /* --------responsive header---------- */
 
-    .header h1 {
-        grid-area: h2;
-        grid-column: 1 / 6;
-        font-size: 5.8em;
 
-        h2 {
-            grid-area: h3;
+    .header {
+        background: none;
+        h1 {
+            grid-area: h2;
             grid-column: 1 / 6;
-            font-size: 3.8rem;
+            font-size: 5.8em;
+
+            h2 {
+                grid-area: h3;
+                grid-column: 1 / 6;
+                font-size: 3.8rem;
+            }
         }
     }
 
@@ -37,16 +42,47 @@
         }
     }
 
+    .navbar-nav {
+        li {
+            font-size: small;
+        }
+    }
+
 
     /*------------- responsive historia-------- */
 
-    .contenido__bocetos img {
-        padding: 0%;
+    .contenido {
+        &__bocetos img {
+            padding: 0%;
+        }
+
+        &__historia p {
+            font-size: x-large;
+        }
     }
 
-    .contenido__historia p {
-        font-size: small;
+    /* --------- responsive proyectos----------- */
+
+    .proyecto {
+        p {
+            font-size: x-large;
+        }
+
+        h3 {
+            font-size: x-large;
+        }
     }
 
+    /* ---------- responsive productos----------- */
+
+    .productos__grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        flex-basis: 100%;
+
+    }
 
 }
