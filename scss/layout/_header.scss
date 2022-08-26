@@ -5,27 +5,29 @@
     background-repeat: no-repeat;
     background-size: 15%;
     margin: auto;
-    h1{
+
+    h1 {
         font-family: $font-principal;
         font-size: 9rem;
         text-transform: uppercase;
         text-align: center;
     }
-    h2{
+
+    h2 {
         font-family: $font-principal;
         font-size: 4rem;
         text-align: center;
     }
-    & .menu__navbar{
+
+    & .navbar-nav a {
         display: flex;
         justify-content: space-around;
-        & .navbar-nav a{
-            color: rgb(116, 5, 116);
-            font-size: 3rem;
-            padding: 1rem;
-            &:hover{
-                color: rgb(104, 7, 59)
-            }
+        color: rgb(116, 5, 116);
+        font-size: 3rem;
+        padding: 1rem;
+
+        &:hover {
+            color: rgb(104, 7, 59)
         }
     }
 }
